@@ -1,19 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="Witz Wealth - Perfil do Investidor">
     <meta property="og:description" content="Acesse e responda o questionario de perfil do investidor.">
     <meta property="og:image" content="https://witz-wealth.github.io/suitability/logo-witz.jpg">
     <meta property="og:url" content="https://witz-wealth.github.io/suitability">
-    <meta charset="UTF-8">
     <style>
-      body { margin: 0; display: flex; justify-content: center; align-items: center; height: 100vh; background: #f5f5f5; font-family: sans-serif; }
-      a { background: #3f493e; color: white; padding: 16px 32px; border-radius: 8px; text-decoration: none; font-size: 16px; }
-      a:hover { opacity: 0.85; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #f7f7f5;
+        font-family: 'Georgia', serif;
+        gap: 40px;
+      }
+      .logo {
+        width: 280px;
+      }
+      .divider {
+        width: 48px;
+        height: 1px;
+        background-color: #1a3a3a;
+        opacity: 0.4;
+      }
+      .subtitle {
+        font-family: 'Georgia', serif;
+        font-size: 13px;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: #1a3a3a;
+        opacity: 0.6;
+      }
+      a.btn {
+        display: inline-block;
+        background-color: #1a3a3a;
+        color: #f7f7f5;
+        text-decoration: none;
+        font-family: 'Georgia', serif;
+        font-size: 15px;
+        letter-spacing: 0.08em;
+        padding: 18px 48px;
+        border-radius: 4px;
+        transition: opacity 0.2s;
+      }
+      a.btn:hover { opacity: 0.82; }
     </style>
   </head>
   <body>
-    <a href="https://app.vsuit.com.br/suitability/1601643c-818a-46d5-9441-0622b2895687?primaryColor=%233f493e&logo=ImagesCompany%2F838ebb19-7dc6-4a2a-a460-ca45227c7b27.png&advisor_id=e85d5ca0-5ed1-40cb-ae82-33634575f140">
+    <img class="logo" src="https://witz-wealth.github.io/suitability/logo-witz.jpg" alt="Witz Wealth">
+    <div class="divider"></div>
+    <p class="subtitle">Questionario de Perfil do Investidor</p>
+    <a class="btn" href="https://app.vsuit.com.br/suitability/1601643c-818a-46d5-9441-0622b2895687?primaryColor=%233f493e&logo=ImagesCompany%2F838ebb19-7dc6-4a2a-a460-ca45227c7b27.png&advisor_id=e85d5ca0-5ed1-40cb-ae82-33634575f140">
       Realizar cadastro para receber o contrato
     </a>
   </body>
